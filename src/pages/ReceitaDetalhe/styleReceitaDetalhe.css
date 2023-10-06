@@ -1,0 +1,75 @@
+/* style.css */
+
+/* Estilo para o componente RecipeDetail */
+.RecipeDetail {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  /* Estilo para o título da receita */
+  .RecipeDetail h2 {
+    color: rgb(101, 100, 100);
+    font-size: 24px;
+  }
+  
+  /* Estilo para a imagem da receita */
+  .RecipeDetail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  /* Estilo para a lista de ingredientes */
+  .RecipeDetail h3 {
+    color: rgb(101, 100, 100);
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para a lista de ingredientes */
+  .RecipeDetail ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Estilo para os itens da lista de ingredientes */
+  .RecipeDetail li {
+    color: rgb(101, 100, 100);
+    font-size: 16px;
+  }
+  
+  /* Estilo para as instruções */
+  .RecipeDetail h3 {
+    color: rgb(101, 100, 100);
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para o texto das instruções */
+  .RecipeDetail p {
+    color: rgb(101, 100, 100);
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  /* Estilo para o link do vídeo do YouTube */
+  .RecipeDetail a {
+    display: inline-block;
+    background-color: rgb(233, 50, 18);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Estilo para o link do vídeo do YouTube quando hover */
+  .RecipeDetail a:hover {
+    background-color: rgba(128, 2, 2, 0.957);
+  }
+  

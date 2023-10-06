@@ -1,0 +1,41 @@
+.BarraNav1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: beige;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.BarraNav1 img {
+  width: 100px;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+}
+
+.LinkOption {
+  background-color: rgb(230, 139, 21);
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.LinkOption:hover {
+  background-color: rgb(228, 109, 12);
+}
+
+@media screen and (max-width: 900px) {
+  .BarraNav1 {
+    flex-direction: column;
+  }
+
+  .options {
+    margin-top: 10px;
+  }
+
+  .LinkOption {
+    padding: 10px;
+  }
+}

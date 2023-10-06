@@ -1,0 +1,99 @@
+body{
+    background-color: beige;
+}
+
+h1{
+    color: rgb(226, 86, 43);
+}
+
+.ReceitasContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.ReceitasAleatorias ul li{
+    color: rgb(101, 100, 100);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(189, 192, 192);
+    max-width: 50vw;
+    max-height: 100vh;
+    font-size: medium;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+.textoImg{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.ReceitasAleatorias img{
+    height: 35vh;
+    margin-right: 10px;
+
+}
+
+.ReceitasAleatorias h4{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.Linkyt{
+    align-self: flex-end;
+    margin: 0;
+    background-color: rgb(233, 50, 18);
+    padding: 10px 80px ;
+    border-radius: 47px;
+    color: aliceblue;
+    text-decoration: none;
+
+}
+
+.Linkyt:hover{
+    background-color: rgba(128, 2, 2, 0.957);
+}
+
+
+@media screen  and (max-width:900px){
+
+    .ReceitasAleatorias img{
+        height: 10vh;
+        margin: 0;
+        
+        
+    }
+    .textoImg{
+        
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ReceitasAleatorias ul li{
+        font-size: x-small;
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        
+
+
+    }
+
+    .ReceitasContainer{
+        align-items: center;
+        justify-content: center; 
+        align-items: center; 
+        
+    }
+    .Linkyt{
+        padding: 10px;
+    }
+
+}

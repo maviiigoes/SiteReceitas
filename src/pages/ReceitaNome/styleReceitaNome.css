@@ -1,0 +1,103 @@
+body{
+    display: flex ;
+    flex-direction: column; 
+    font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+    
+}
+
+.ImputNome{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+.ImputNome input {
+  padding: 1vh 10vw;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionando sombra */
+}
+
+
+
+.ReceitasNome ul{
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    max-height: 100vh;
+    font-size: medium;
+    color: rgb(101, 100, 100);
+
+    
+}
+
+.ReceitasNome ul li{
+    margin-top: 3vh;
+    background-color: rgb(172, 190, 190);
+    
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+
+.ListaReceitaNome img{
+    width: 30vw;
+}
+
+
+.ListaReceitaNome{
+    border: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+ .ElementosReceita{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between  ;
+ }
+
+ .container-centro {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    width: auto;
+ }
+
+ @media screen  and (max-width:1000px ){
+    .ElementosReceita {
+        flex-direction: column;
+        align-items: center; /* Alinhar as imagens centralmente */
+        max-width: 100vw;
+      }
+    
+      .ElementosReceita img {
+        width:30vw ; 
+        height: auto; 
+      
+      }
+    
+      .ReceitasNome ul {
+        margin: 0 auto;
+        font-size: smaller;
+        flex-direction: column;
+        max-width: 100vw;
+        align-items: center;
+
+      }
+
+      .ReceitasNome{
+        display: flex;
+        align-items: center;
+      }
+
+      
+ }
