@@ -62,11 +62,18 @@ body {
 }
 
 
+
 .ElementosReceita {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  
 }
+
+.ElementosReceita h4{
+  margin-left: 12px;
+}
+
 
 .container-centro {
   display: flex;
