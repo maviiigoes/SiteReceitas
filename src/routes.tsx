@@ -21,13 +21,23 @@ function RoutesApp() {
     <div>
       <BrowserRouter>
         <Header />
+        <div className="ReceitasGrupo">
+
+        <Routes>
+          {mealListRoutes}
+        </Routes>
         <Routes>
           {mealListRoutes}
           
-        </Routes><Routes>
+        </Routes> <Routes>
+          {mealListRoutes}
+        </Routes>
+        <Routes>
           {mealListRoutes}
           
         </Routes>
+
+        </div>
 
         <Routes>
           <Route path="/ReceitaNome" element={<MealListN/>}/>

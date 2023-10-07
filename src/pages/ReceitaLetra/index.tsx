@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "./styleReceitaLetra.css";
+import "../styleReceitas.css";
 
 type Meal = {
   idMeal: string;
@@ -63,10 +63,9 @@ function MealListByFirstLetter() {
           ) : (
             <ul>
               {meals.map((meal) => (
-                <li className="ListaReceitaNome" key={meal.idMeal}>
+                <li className="ListasReceitasT" key={meal.idMeal}>
                   <h2>{meal.strMeal}</h2>
                   <div className="ElementosReceita">
-                    {/* Adicione um Link em torno da imagem que aponta para a página de detalhes */}
                     <Link to={`/receita/${meal.idMeal}`}>
                       <img src={meal.strMealThumb} alt={meal.strMeal} />
                     </Link>

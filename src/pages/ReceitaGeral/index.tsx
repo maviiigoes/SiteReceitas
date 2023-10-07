@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom'; // Importe o Link do react-router-dom
+import { Link } from 'react-router-dom'; 
 import "./styleReceitaGeral.css"
 
 function MealList() {
@@ -40,13 +40,14 @@ function MealList() {
             <ul>
               {meals.map((meal: any) => (
                 <li key={meal.idMeal}>
+                  <div className='Titulo'>
                   <h2>{meal.strMeal}</h2>
+                  </div>
                   <div className='textoImg'>
-                    {/* Use o Link para criar um link para a página de receita completa */}
                     <Link to={`/receita/${meal.idMeal}`}>
                       <img src={meal.strMealThumb} alt={meal.strMeal} />
                     </Link>
-                    <h4>{meal.strInstructions.slice(0, 500)}...</h4>
+                    <h4>{meal.strInstructions.slice(0, 150  )}...</h4>
                   </div>
                   <a className='Linkyt' href={meal.strYoutube}>YouTube</a>
                 </li>

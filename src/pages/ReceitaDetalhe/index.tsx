@@ -25,7 +25,7 @@ function RecipeDetail() {
           const meal = response.data.meals[0];
           const ingredients = [];
 
-          // Loop para coletar ingredientes e medidas
+      
           for (let i = 1; i <= 20; i++) {
             const ingredient = meal[`strIngredient${i}`];
             const measure = meal[`strMeasure${i}`];
@@ -35,7 +35,7 @@ function RecipeDetail() {
             }
           }
 
-          // Defina o estado com os dados da receita formatados
+          
           setRecipe({
             idMeal: meal.idMeal,
             strMeal: meal.strMeal,

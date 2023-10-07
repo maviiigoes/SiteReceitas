@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom"; // Importe o componente Link do React Router
+import { Link } from "react-router-dom"; 
+import "../styleReceitas.css"
 
 function MealListIngr() {
   const [meals, setMeals] = useState<any[]>([]);
@@ -53,7 +54,7 @@ function MealListIngr() {
           ) : (
             <ul>
               {meals.map((meal: any) => (
-                <li className="ListaReceitaNome" key={meal.idMeal}>
+                <li className="ListasReceitasT" key={meal.idMeal}>
                   <h2>{meal.strMeal}</h2>
                   <div className='ElementosReceita'>
                     {/* Adicione um Link em torno da imagem que aponta para a página de detalhes */}
