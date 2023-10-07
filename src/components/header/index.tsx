@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import "./style.css";
+import Receitas_do_Chef from"./logo/Receitas_do_Chef.png"
+
+
 
 export function Header() {
   return (
     <header className="BarraNav1">
       <div>
         <Link className="Logo" to={'/'}>
-          <img src="../Receitas_do_Chef.png" alt="" />
+          <img src={Receitas_do_Chef} alt="" />
         </Link>
       </div>
       <div className="options">
